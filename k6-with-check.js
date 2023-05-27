@@ -7,3 +7,7 @@ export default function (){
         'Status is 200': (r)=>r.status===200
     });
 }
+
+/**
+ * Use command k6 run k6-with-check.js
+ */

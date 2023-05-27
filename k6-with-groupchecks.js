@@ -27,3 +27,7 @@ export default function () {
         });
     });
 }
+
+/**
+ * Use command k6 run k6-with-groupchecks.js
+ */

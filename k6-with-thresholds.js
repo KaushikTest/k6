@@ -12,3 +12,7 @@ export default function () {
     http.get('https://catfact.ninja/fact');
     sleep(1);
 }
+
+/**
+ * Use command k6 run k6-with-thresholds.js
+ */

@@ -12,3 +12,7 @@ export function handleSummary(data){
         "summary.html":htmlReport(data)
     }
 }
+
+/**
+ * Use command k6 run k6-with-htmlreport.js
+ */

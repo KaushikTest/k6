@@ -7,3 +7,7 @@ export const options ={
 export default function () {
     http.get('https://catfact.ninja/fact');
 }
+
+/**
+ * Use command k6 run k6-with-stages.js
+ */

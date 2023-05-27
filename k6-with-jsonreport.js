@@ -11,3 +11,7 @@ export function handleSummary(data){
         "summary.json":JSON.stringify(data)
     }
 }
+
+/**
+ * Use command k6 run k6-with-jsonreport.js
+ */
