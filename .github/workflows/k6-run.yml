@@ -11,4 +11,4 @@ jobs:
       - name: Run k6 scripts
         uses: grafana/k6-action@v0.3.0
         with: 
-          filename: ./k6-basic-script.js
+          filename: k6scripts/k6-basic-script.js
