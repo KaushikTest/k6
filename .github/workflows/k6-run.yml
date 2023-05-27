@@ -10,8 +10,55 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Run k6 scripts
+
+      - name: Run k6-basic script
         uses: grafana/k6-action@v0.3.0
         with: 
           filename: k6scripts/k6-basic-script.js
-          flags: --vus 1 --iterations 1
+
+      - name: Run k6-with-check script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-check.js
+          
+      - name: Run k6-with-group script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-group.js  
+
+      - name: Run k6-with-groupchecks script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-groupchecks.js    
+          
+      - name: Run k6-with-htmlreport script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-htmlreport.js 
+        
+      - name: Run k6-with-jsonfile script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-jsonfile.js
+          flags: --vus 10 --iterations 10    
+
+      - name: Run k6-with-jsonreport script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-jsonreport.js
+    
+      - name: Run k6-with-sharedarray script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-sharedarray.js
+          flags: --vus 10 --iterations 10     
+
+      - name: Run k6-with-stages script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-stages.js
+          
+      - name: Run k6-with-thresholds script
+        uses: grafana/k6-action@v0.3.0
+        with: 
+          filename: k6scripts/k6-with-thresholds.js    
