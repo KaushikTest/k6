@@ -12,4 +12,4 @@ jobs:
         uses: grafana/k6-action@v0.3.0
         with: 
           filename: k6scripts/k6-basic-script.js
-          flags: --vus 1 iterations 1
+          flags: --vus 1 --iterations 1
