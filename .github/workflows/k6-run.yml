@@ -1,0 +1,14 @@
+name: Performance Test
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  performance_test:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Run k6 scripts
+        uses: grafana/k6-action@0.3.0
+        with: 
+          filename: k6-basic-script.js
