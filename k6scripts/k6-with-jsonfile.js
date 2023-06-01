@@ -11,5 +11,5 @@ export default function () {
 }
 
 /**
- * Use command k6 run k6-with-sharedarray.js --vus 10 --iterations 10
+ * Use command k6 run k6-with-jsonfile.js --vus 10 --iterations 10
  */
