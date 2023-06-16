@@ -63,7 +63,7 @@ jobs:
         with: 
           filename: k6scripts/k6-with-stages.js
 
-      - name: Run k6-with-stages script
+      - name: Run k6-with-environmentvariable script
         uses: grafana/k6-action@v0.3.0
         with: 
           filename: k6scripts/k6-with-environmentvariable.js

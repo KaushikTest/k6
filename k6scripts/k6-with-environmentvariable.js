@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 
 export default function () {
-    console.log(__ENV.windir)
+    console.log(__ENV);
     http.get('https://catfact.ninja/fact');
     sleep(1);
 }
